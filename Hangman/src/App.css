@@ -22,6 +22,11 @@ body {
 
 header {
   text-align: center;
+  margin: 0px;
+}
+
+p{
+  margin: 0px;
 }
 
 .chipsCntr{
@@ -34,5 +39,58 @@ header {
 }
 .chips{
     max-width: 350px;
-    margin-bottom: 36px;
+    margin: 36px 0px;
+}
+
+.currentWord{
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+
+}
+
+.currentWord > span{
+  height: 40px;
+  width: 40px;
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #F9F4DA;
+ 
+}
+
+.keyboard{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  gap: 6px;
+  max-width: 450px;
+}
+
+.keyboard > button {
+  height: 35px;
+  width: 35px;
+  border-radius: 7%;
+  border: none;
+  background-color: #9c95dc;
+   font-family: "Lacquer", system-ui;
+   font-size: 1.1em;
+   cursor: pointer;
+}
+
+button.new-game {
+    background-color: #d27ff0;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    padding: 6px 12px;
+    display: block;
+    margin-inline: auto;
+    cursor: pointer;
+    margin-top: 36px;
+    font-family: "Lacquer", system-ui;
+    font-size: 1.2em;
 }
